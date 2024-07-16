@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: rgb(207, 230, 219);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
 }
@@ -16,7 +16,17 @@ h2 {
     border: none;
     font-size: xx-large;
     cursor: pointer;
-    padding: 30px;
+    margin: 20px;
+    padding: 10px 15px;
+}
+
+.toggle:hover{
+    background-color: rgba(236, 236, 236, 0.411);
+    border-radius: 10px;
+}
+
+.toggle:active{
+    background-color: rgba(189, 186, 186, 0.411);
 }
 
 .menu {
@@ -26,7 +36,7 @@ h2 {
 
 .menu-items{
     padding: 30px;
-    font-size: large;
+    font-size: larger;
 }
 
 .menu-items:hover{
@@ -42,20 +52,35 @@ h2 {
     height: 100%;
     background-color: azure;
     text-align: center;
+    transform: translate(-100%);
+    box-shadow: 2px 0px 2px rgba(110, 110, 110, 0.568);
 }
 
 .nav-header {
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .quit {
     background: none;
     border: none;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 1.5rem;
     color: rgb(71, 71, 71);
     cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.quit:hover{
+    background-color: rgba(236, 236, 236, 0.411);
+    border-radius: 10px;
+}
+
+.quit:active{
+    background-color: rgba(189, 186, 186, 0.411);
 }
 
 a {
@@ -75,6 +100,6 @@ a {
     font-size: 2rem;
 }
 
-.hide-sidebar{
-    width: 0;
+.show-sidebar{
+    transform: translate(0);
 }
